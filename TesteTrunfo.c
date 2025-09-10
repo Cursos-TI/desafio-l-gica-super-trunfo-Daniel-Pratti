@@ -114,49 +114,70 @@ int main (){
     printf("PIB per capita: %.2f\n", pibcapita_2);
     printf("superpoder: %.2f \n\n", superpoder_2);
 
-   int resultado_pop  = populacao_1 > populacao_2;      //Comparações entre as variáveis das duas cartas
-   int resultado_area =  area_1 > area_2;
-   int resultado_pib = pib_1 > pib_2;
-   int resultado_pt =  pontos_turisticos_1 > pontos_turisticos_2;
-   int resultado_den = densidade_1 < densidade_2;
-   int resultado_pibpc = pibcapita_1 > pibcapita_2;
-   int resultado_sp = superpoder_1 > superpoder_2;
+    printf("Agora vamos comparar as cartas em cada categoria:\n\n"); // Comparação das cartas em cada categoria
 
-     printf("Comparação das cartas (1 = Carta 1 venceu, 0 = Carta 2 venceu):\n\n");    //Comparação entre as duas cartas
+   if (populacao_1 > populacao_2) {
+       printf("A carta 1 venceu na categoria população!\n");
+   } else if (populacao_2 > populacao_1) {
+      printf("A carta 2 venceu na categoria população!\n");
+   } else {
+      printf("Empate na categoria população!\n");
+   }
 
-    printf("População: %d\n", resultado_pop);
-    printf("Área: %d\n", resultado_area);
-    printf("PIB: %d\n", resultado_pib);
-    printf("Pontos Turísticos: %d\n", resultado_pt);
-    printf("Densidade Demográfica: %d\n", resultado_den);
-    printf("PIB per capita: %d\n", resultado_pibpc);
-    printf("Superpoder: %d\n\n\n", resultado_sp);
+   if (area_1 > area_2) {
+       printf("A carta 1 venceu na categoria área!\n");
+   } else if (area_2 > area_1) {
+       printf("A carta 2 venceu na categoria área!\n");
+   } else {
+       printf("Empate na categoria área!\n");
+   }
 
+   if (pib_1 > pib_2) {
+       printf("A carta 1 venceu na categoria PIB!\n");
+   } else if (pib_2 > pib_1) {
+       printf("A carta 2 venceu na categoria PIB!\n");
+   } else {
+       printf("Empate na categoria PIB!\n");
+   }
+
+   if (pontos_turisticos_1 > pontos_turisticos_2) {
+       printf("A carta 1 venceu na categoria pontos turísticos!\n");
+   } else if (pontos_turisticos_2 > pontos_turisticos_1) {
+       printf("A carta 2 venceu na categoria pontos turísticos!\n");
+   } else {
+       printf("Empate na categoria pontos turísticos!\n");
+   }
+
+   if (densidade_1 < densidade_2) {
+       printf("A carta 1 venceu na categoria densidade demográfica!\n");
+   } else if (densidade_2 < densidade_1) {
+       printf("A carta 2 venceu na categoria densidade demográfica!\n");
+   } else {
+       printf("Empate na categoria densidade demográfica!\n");
+   }
+
+   if (pibcapita_1 > pibcapita_2) {
+       printf("A carta 1 venceu na categoria PIB per capita!\n");
+   } else if (pibcapita_2 > pibcapita_1) {
+       printf("A carta 2 venceu na categoria PIB per capita!\n");
+   } else {
+       printf("Empate na categoria PIB per capita!\n");
+   }
+
+
+   if (superpoder_1 > superpoder_2) {
+       printf("A carta 1 venceu na categoria superpoder!\n");
+   } else if (superpoder_2 > superpoder_1) {
+       printf("A carta 2 venceu na categoria superpoder!\n");
+   } else {
+       printf("Empate na categoria superpoder!\n");
+   }
+
+
+    
     
 
 
     return 0;
 
 }
-
-
-
-
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
