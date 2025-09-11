@@ -280,7 +280,7 @@ int main (){
                     printf("5 - Densidade Demográfica\n");
                     printf("6 - PIB per capita\n");
                     printf("7 - Superpoder\n");
-                    printf("\nDigite a opção desejada:");
+                    printf("\nDigite a opção desejada:\n");
                     scanf("%d", &atributo1);
 
                     printf("\nEscolha o segundo atributo que você quer comparar.\n");
@@ -301,153 +301,139 @@ int main (){
                     switch (atributo1) {
                 case 1:
                     printf ("Primeiro Atributo: População\n\n");
-                    atributo1 = populacao_1 > populacao_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria população!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria população!\n", cidade_2);
+                    if (populacao_1 > populacao_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria população!\n\n", cidade_1);
+                    else if (populacao_2 > populacao_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria população!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria população!\n");
+                        printf("Empate na categoria população!\n\n");
 
                     break;
                 case 2:
                     printf ("Primeiro Atributo: Área\n\n");
-                    atributo1 = area_1 > area_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria área!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria área!\n", cidade_2);
+                    if (area_1 > area_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria área!\n\n", cidade_1);
+                    else if (area_2 > area_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria área!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria área!\n");
+                        printf("Empate na categoria área!\n\n");
                     break;
                 case 3:
                     printf ("Primeiro Atributo: PIB\n\n");
-                    atributo1 = pib_1 > pib_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria PIB!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB!\n", cidade_2);
+                    if (pib_1 > pib_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria PIB!\n\n", cidade_1);
+                    else if (pib_2 > pib_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria PIB!\n");
+                        printf("Empate na categoria PIB!\n\n");
                     break;
                 case 4:
                     printf ("Primeiro Atributo: Pontos Turísticos\n\n");
-                    atributo1 = pontos_turisticos_1 > pontos_turisticos_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria pontos turísticos!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria pontos turísticos!\n", cidade_2);
+                    if (pontos_turisticos_1 > pontos_turisticos_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria pontos turísticos!\n\n", cidade_1);
+                    else if (pontos_turisticos_2 > pontos_turisticos_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria pontos turísticos!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria pontos turísticos!\n");
+                        printf("Empate na categoria pontos turísticos!\n\n");
                     break;
                 case 5:
                     printf ("Primeiro Atributo: Densidade Demográfica\n\n");
-                    atributo1 = densidade_1 > densidade_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria densidade demográfica!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria densidade demográfica!\n", cidade_2);
+                    if (densidade_1 < densidade_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria densidade demográfica!\n\n", cidade_1);
+                    else if (densidade_2 < densidade_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria densidade demográfica!\n\n", cidade_2);
                     else
                         printf("Empate na categoria densidade demográfica!\n\n");
                     break;
                 case 6:
                     printf ("Primeiro Atributo: PIB per capita\n\n");
-                    atributo1 = pibcapita_1 > pibcapita_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria PIB per capita!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB per capita!\n", cidade_2);
+                    if (pibcapita_1 > pibcapita_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria PIB per capita!\n\n", cidade_1);
+                    else if (pibcapita_2 > pibcapita_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB per capita!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria PIB per capita!\n");
+                        printf("Empate na categoria PIB per capita!\n\n");
                     break;
                 case 7:
                     printf ("Primeiro Atributo: Superpoder\n\n");
-                    atributo1 = superpoder_1 > superpoder_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria superpoder!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria superpoder!\n", cidade_2);
+                    if (superpoder_1 > superpoder_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria superpoder!\n\n", cidade_1);
+                    else if (superpoder_2 > superpoder_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria superpoder!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria superpoder!\n");
+                        printf("Empate na categoria superpoder!\n\n");
                     break;
                 default:
-                    printf("Opção inválida. Saindo do jogo.\n");
+                    printf("Opção inválida. Saindo do jogo.\n\n");
                     return 0;
                     }
                 switch (atributo2) {
                 case 1:
                     printf ("Segundo Atributo: População\n\n");
-                    atributo2 = populacao_1 > populacao_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria população!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria população!\n", cidade_2);
+                    if (populacao_1 > populacao_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria população!\n\n", cidade_1);
+                    else if (populacao_2 > populacao_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria população!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria população!\n");
+                        printf("Empate na categoria população!\n\n");
                     break;
                 case 2:
                     printf ("Segundo Atributo: Área\n\n");
-                    atributo2 = area_1 > area_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria área!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria área!\n", cidade_2);
+                    if (area_1 > area_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria área!\n\n", cidade_1);
+                    else if (area_2 > area_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria área!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria área!\n");
+                        printf("Empate na categoria área!\n\n");
                     break;
                 case 3:
                     printf ("Segundo Atributo: PIB\n\n");
-                    atributo2 = pib_1 > pib_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria PIB!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB!\n", cidade_2);
+                    if (pib_1 > pib_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria PIB!\n\n", cidade_1);
+                    else if (pib_2 > pib_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB!\n\n", cidade_2);
                     else
                         printf("Empate na categoria PIB!\n");
                     break;
 
                 case 4:
                     printf ("Segundo Atributo: Pontos Turísticos\n\n");
-                    atributo2 = pontos_turisticos_1 > pontos_turisticos_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria pontos turísticos!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria pontos turísticos!\n", cidade_2);
+                    if (pontos_turisticos_1 > pontos_turisticos_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria pontos turísticos!\n\n", cidade_1);
+                    else if (pontos_turisticos_2 > pontos_turisticos_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria pontos turísticos!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria pontos turísticos!\n");
+                        printf("Empate na categoria pontos turísticos!\n\n");
                     break;
 
                 case 5:
                     printf ("Segundo Atributo: Densidade Demográfica\n\n");
-                    atributo2 = densidade_1 > densidade_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria densidade demográfica!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria densidade demográfica!\n", cidade_2);
+                    if (densidade_1 < densidade_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria densidade demográfica!\n\n", cidade_1);
+                    else if (densidade_2 < densidade_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria densidade demográfica!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria densidade demográfica!\n");
+                        printf("Empate na categoria densidade demográfica!\n\n");
                     break;
 
                 case 6:
                     printf ("Segundo Atributo: PIB per capita\n\n");
-                    atributo2 = pibcapita_1 > pibcapita_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria PIB per capita!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB per capita!\n", cidade_2);
+                    if (pibcapita_1 > pibcapita_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria PIB per capita!\n\n", cidade_1);
+                    else if (pibcapita_2 > pibcapita_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria PIB per capita!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria PIB per capita!\n");
+                        printf("Empate na categoria PIB per capita!\n\n");
                     break;
 
                 case 7:
                     printf ("Segundo Atributo: Superpoder\n\n");
-                    atributo2 = superpoder_1 > superpoder_2 ? 1 : 0;
-                    if (atributo1 && atributo2)
-                        printf("A Cidade %s(Carta 1) venceu na categoria superpoder!\n", cidade_1);
-                    else if (!atributo1 && !atributo2)
-                        printf ("A Cidade %s(Carta 2) venceu na categoria superpoder!\n", cidade_2);
+                    if (superpoder_1 > superpoder_2)
+                        printf("A Cidade %s(Carta 1) venceu na categoria superpoder!\n\n", cidade_1);
+                    else if (superpoder_2 > superpoder_1)
+                        printf ("A Cidade %s(Carta 2) venceu na categoria superpoder!\n\n", cidade_2);
                     else
-                        printf("Empate na categoria superpoder!\n");
+                        printf("Empate na categoria superpoder!\n\n");
                     break;
 
                 default:
